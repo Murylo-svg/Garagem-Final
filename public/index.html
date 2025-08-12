@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garagem do Aranha - Agendamentos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <button id="hamburger-btn" class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="nav-menu" class="nav-menu">
+        <a href="login/login.html">Login</a>
+        <a href="login/cadastro.html">Registro</a>
+        <!-- ==== LINK ATUALIZADO ==== -->
+        <a href="pesquisa.html">Pesquisar Peças</a>
+        <!-- ========================== -->
+    </nav>
+
+
+    <div class="overlay">
+        <header>
+            <h1>Garagem do Aranha</h1>
+        </header>
+
+        <div class="container">
+            <div class="form-container">
+                <h2>Agendar Nova Manutenção</h2>
+                <form id="formAgendamento">
+                    <div class="form-group">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Horário:</label>
+                        <input type="time" id="hora" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Descrição da Manutenção:</label>
+                        <textarea id="descricao" rows="4" placeholder="Ex: Troca de óleo e revisão dos freios..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Agendar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="agendamentos-container">
+                <h2>Manutenções Agendadas</h2>
+                <ul id="listaAgendamentos">
+                    <!-- Agendamentos gerados pelo JavaScript aparecerão aqui -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <script src="JS/main.js"></script>
+
+</body>
+</html>
