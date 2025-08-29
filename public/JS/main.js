@@ -143,3 +143,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Exibe os agendamentos já salvos assim que a página carrega
     renderizarAgendamentos();
 });
+
